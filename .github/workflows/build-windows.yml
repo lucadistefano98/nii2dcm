@@ -18,9 +18,9 @@ jobs:
           submodules: recursive
 
       - name: Set up CMake
-        uses: lukka/get-cmake@v3
+        uses: actions/setup-cmake@v3
         with:
-          cmakeVersion: '3.24.2'  # Puoi modificare se vuoi un'altra versione
+          cmake-version: '3.26.4' # Puoi modificare se vuoi un'altra versione
 
       - name: Configure (CMake)
         run: cmake -B build -A x64 -DCMAKE_BUILD_TYPE=Release
